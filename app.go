@@ -6,7 +6,7 @@ import (
 )
 
 func RedirectHandler(w http.ResponseWriter, r *http.Request) {
-	http.Redirect(w, r, "http://www.gentoo.jp"+r.URL.Path, http.StatusMovedPermanently)
+	http.Redirect(w, r, "http://www.gentoo.jp"+r.URL.Path, http.StatusFound)
 }
 
 func main() {
