@@ -1,0 +1,11 @@
+language: go
+go:
+- '1.0'
+- '1.3'
+deploy:
+  provider: heroku
+  api_key:
+    secure: NC8jvWAqe8lQBUhkyZZQJiGpYNjU+JmQswIY7IsOD3oyOvfrIAVPLwghw52ZtezslvJ4/Ab4JD1wHY51BUoeWr71NysEN7vt5kFe2G1XIIaCNfLv9tP+3uLDGmEcJLT8YxubUG2BRJTlTxr5Ogco/P6n8oHJJBS7p5N03fK4IHQ=
+  app: www-gentoo-gr-jp
+  on:
+    repo: gentoojp/www-gentoo-gr-jp-redirector
